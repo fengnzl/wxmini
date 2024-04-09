@@ -1,0 +1,23 @@
+.item {
+  padding: 50rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  align-items: center;
+  color: #666;
+  justify-content: space-between;
+}
+.title {
+  margin-left: 15rpx;
+}
+.done {
+  text-decoration: line-through;
+  color: #999;
+}
+.delete {
+  color: #999;
+}
+.total {
+  color: #409EFF;
+  margin: 30rpx 0;
+  display: block;
+}

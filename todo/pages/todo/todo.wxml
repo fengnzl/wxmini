@@ -1,0 +1,4 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <item bindonTriggerCheck="onTriggerCheck" bindonDelete="onDelete" list="{{ list }}" type="todo"></item>
+</view>

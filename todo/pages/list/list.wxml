@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <view class="item-container ">
+    <input type="text" model:value="{{ title }}" placeholder="请输入代办事项..."/>
+  </view>
+  <button class="add-btn" bind:tap="onAddTask">创建一个任务</button>
+  <item bindonTriggerCheck="onTriggerCheck" bindonDelete="onDelete" list="{{ list }}"></item>
+</view>

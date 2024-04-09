@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/todo/todo",
+    "pages/done/done"
+  ],
+  "window": {
+    "navigationBarTitleText": "代办事项",
+    "navigationBarBackgroundColor": "#409EFF",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#409EFF",
+    "color": "#ccc",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "任务清单",
+        "iconPath": "imgs/list.png",
+        "selectedIconPath": "imgs/sel-list.png"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "未完成",
+        "iconPath": "imgs/todo.png",
+        "selectedIconPath": "imgs/sel-todo.png"
+      },
+      {
+        "pagePath": "pages/done/done",
+        "text": "已完成",
+        "iconPath": "imgs/done.png",
+        "selectedIconPath": "imgs/sel-done.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

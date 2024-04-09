@@ -1,0 +1,10 @@
+<view>
+  <text class="total">共 {{showList.length}} 个任务</text>
+  <view wx:for="{{showList}}" wx:key="key" class="item">
+    <view bind:tap="onTriggerCheck" data-index="{{item.rawIndex}}" data-item="{{item}}">
+      <checkbox value="{{item.title}}" checked="{{item.done}}"/>
+      <text class="{{ item.done ? 'title done' : 'title' }}">{{item.title}}</text>
+    </view>
+    <text data-index="{{item.rawIndex}}" bind:tap="onDelete" class="~iconfont ~icon-shanchu1 delete"></text>
+  </view>
+</view>
